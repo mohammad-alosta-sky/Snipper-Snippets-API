@@ -1,31 +1,20 @@
 package com.multiverse.SnipperSnippetsAPI.models;
 
-import java.util.ArrayList;
 
 public class SnippetModel {
     private Integer id;
     private String language;
     private String code;
 
-    static ArrayList<SnippetModel> snippetsList = new ArrayList <>();
 
     public SnippetModel(Integer id, String language, String code) {
         this.id = id;
         this.language = language;
         this.code = code;
-//        SnippetModel.snippetsList.add(this);
 
 
     }
 
-//    @Override
-//    public String toString() {
-//        return '{' +
-//                "id=" + id +
-//                ", language='" + language + '\'' +
-//                ", code='" + code + '\'' +
-//                '}';
-//    }
 
     public Integer getId() {
         return id;
@@ -53,14 +42,5 @@ public class SnippetModel {
     }
 
 
-    public static void main(String[] args) {
-        SnippetModel s1 = new SnippetModel(0, "Java", "System.out.println(\"text\")");
-//        new SnippetModel(1, "Java", "System.out.println(\"text\")");
-//        new SnippetModel(2, "Java", "System.out.println(\"text\")");
-//        new SnippetModel(3, "Java", "System.out.println(\"text\")");
-        snippetsList.add(s1);
 
-        System.out.println(SnippetModel.snippetsList);
-
-    }
 }
